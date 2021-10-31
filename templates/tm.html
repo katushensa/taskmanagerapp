@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Таск-Менеджер</title>
+{% endblock %}
+
+
+{% block body %}
+
+
+<div class="container">
+    <form method="post" >
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+  <H2><b>Введите задачу:</b></H2>
+
+      <div class="form-floating">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="form-control" id="floatingTask" name="task" placeholder="Введите задачу" ><br>
+
+    </div>
+  <button class="w-100 btn btn-lg btn-primary" type="submit">Отправить</button><br>
+        <a class="check" href="/task_list">Посмотреть список задач</a>
+ </div>
+
+    </form>
+
+{% endblock %}
+

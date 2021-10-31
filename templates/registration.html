@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Регистрация</title>
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container"  >
+
+
+
+  <form method="post" >
+<br>
+    <h2>Регистрация</h2>
+<div class reg_input>
+    <div class="form-floating">
+      <label for="floatingLogin">Login</label><br>
+      <input type="text" class="form-control" id="floatingLogin" name="login" placeholder="name" ><br>
+
+    </div>
+
+    <div class="form-floating">
+      <label for="floatingInput">Email address</label><br>
+      <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" ><br>
+
+    </div>
+    <div class="form-floating">
+      <label for="floatingPassword">Password</label><br>
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password"><br>
+
+    </div><br>
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Зарегистрироваться</button><br>
+</div>
+  </form>
+</main>
+
+
+
+
+
+</div>
+{% endblock %}
+
+

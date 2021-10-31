@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Авторизация</title>
+{% endblock %}
+
+
+{% block body %}
+<div class="login">
+<div class="container"  >
+
+
+
+  <form method="post" >
+<br>
+    <h2>Авторизация</h2>
+
+
+
+    <div class="form-floating">
+      <label for="floatingInput1">Email address</label><br>
+      <input type="email" class="form-control" id="floatingInput1" name="email1" placeholder="name@example.com" ><br>
+
+    </div>
+    <div class="form-floating">
+      <label for="floatingPassword1">Password</label><br>
+      <input type="password" class="form-control" id="floatingPassword1" name="password1" placeholder="Password"><br>
+
+    </div><br>
+
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Авторизоваться</button><br>
+
+  </form>
+</main>
+
+
+
+
+
+</div>
+
+  </div>
+{% endblock %}
+
+

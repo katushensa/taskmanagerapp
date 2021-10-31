@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Таск-Менеджер</title>
+{% endblock %}
+
+
+{% block body %}
+<Div >
+</Div>>
+<div class="container_tm">
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+<a class='check' href="/task_list">Список задач:</a><br>
+{% for elem in  task_list_user %}
+    <div class="list_tm">
+        • {{elem}}<br>
+        </div>
+    {% endfor %}
+    &nbsp;<br>
+    <form method="post" >
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Очистить список</button><br>
+    </form>
+{% endblock %}
+</div>
